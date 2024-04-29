@@ -1,27 +1,23 @@
 def solution(k, m, score):
+    #몇개의 갯수가 각자 있는지 가지는 임시 저장소
     temp=[]
+    
+    #포장못한 남은 사과 갯수(임시 저장공간)
     tempN=0
-    tempC=0
+    
     answer=0
-    pack_Max=len(score)//m
+    
+    #갯수 카운터 함수
     for n in range(1,k+1):
         temp.append(score.count(n))
         
-
-    print()
+    #-n+1 = 역순출력  (k-n)해당 순서의 상품 포장 가치 
     for n in range(0,k):
-
-        if(tempN!=0):
-            if((temp[k-(n+1)]+tempN)//m>0):
-                answer+= ((temp[k-(n+1)]+tempN)//m)*(k-n)*m
-                tempN=(temp[k-(n+1)]+tempN)%m
-            else:
-                tempN+=temp[k-(n+1)]
-        elif(temp[k-(n+1)]//m>0):
-            answer+=(temp[k-(n+1)]//m)*(k-n)*m
-            tempN=temp[k-(n+1)]%m
+        if((temp[-(n+1)]+tempN)//m>0):
+            answer+= ((temp[-(n+1)]+tempN)//m)*(k-n)*m
+            tempN=(temp[-(n+1)]+tempN)%m
         else:
-            tempN+=temp[k-(n+1)]
+            tempN+=temp[-(n+1)]
 
         
     return answer
