@@ -10,7 +10,6 @@ class Solution {
              if(answer>health){
                 answer=health;
             }
-            System.out.print(answer);
             answer -= attacks[i+1][1];
             if(answer<=0){
                 answer=-1;
