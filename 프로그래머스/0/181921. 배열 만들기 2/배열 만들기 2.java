@@ -12,6 +12,7 @@ class Solution {
            for(int j = 0; j < strNum.length(); j++) {
                 if(strNum.charAt(j) != '0' && strNum.charAt(j) != '5') {
                     count= false;
+                    break;
                 }
             }
            if(count ==true)
