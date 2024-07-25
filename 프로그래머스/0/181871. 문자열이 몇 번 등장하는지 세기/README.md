@@ -1,6 +1,6 @@
 # [level 0] 문자열이 몇 번 등장하는지 세기 - 181871 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181871?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181871?language=csharp) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 07월 25일 20:58:53
+2024년 07월 25일 21:01:01
 
 ### 문제 설명
 
