@@ -1,6 +1,6 @@
 # [level 0] x 사이의 개수 - 181867 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181867?language=csharp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181867?language=java) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 07월 27일 10:23:04
+2024년 07월 27일 10:23:09
 
 ### 문제 설명
 
