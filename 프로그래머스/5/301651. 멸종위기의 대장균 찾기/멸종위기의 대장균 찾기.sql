@@ -1,0 +1,26 @@
+WITH RECURSIVE GENERATION_DATE AS (
+    SELECT   ID 
+           , PARENT_ID
+           , 1  AS GENERATION
+      FROM ECOLI_DATA
+     WHERE PARENT_ID IS NULL
+    
+     UNION ALL
+
+    SELECT   E.ID
+           , E.PARENT_ID
+           , GENERATION + 1
+      FROM ECOLI_DATA E
+      JOIN GENERATION_DATE G ON G.ID = E.PARENT_ID
+)
+
+
+SELECT    COUNT(*) AS COUNT
+        , GENERATION
+  FROM  GENERATION_DATE 
+  -- 각 세대별 자식이 없는 대장균의 ID 추출(리프노드)
+ WHERE ID NOT IN (SELECT PARENT_ID
+                    FROM GENERATION_DATE
+                   WHERE PARENT_ID IS NOT NULL)
+GROUP BY 2
+ORDER BY 2;
