@@ -1,3 +1,4 @@
+/* MYSQL*/
 SELECT    i.ANIMAL_ID
         , i.NAME
   FROM    ANIMAL_INS  i
