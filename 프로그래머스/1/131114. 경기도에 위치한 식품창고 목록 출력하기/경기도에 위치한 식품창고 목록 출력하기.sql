@@ -1,3 +1,4 @@
+--oracle
 SELECT    WAREHOUSE_ID
         , WAREHOUSE_NAME
         , ADDRESS
