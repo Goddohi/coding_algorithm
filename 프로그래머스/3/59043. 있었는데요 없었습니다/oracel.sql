@@ -1,3 +1,4 @@
+-- oracle
 SELECT    i.ANIMAL_ID   as ANIMAL_ID 
         , i.NAME        as NAME 
   FROM    ANIMAL_INS i 
