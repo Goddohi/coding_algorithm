@@ -1,3 +1,4 @@
+/*mysql*/
 WITH Possible_CAR_TYPE AS (
     SELECT DISTINCT c.CAR_ID
                   , c.CAR_TYPE
